@@ -14,14 +14,57 @@ if (input === null) {
 console.log("total", total); 
 
 
-// if (input === null) {
-//   alert (`The total sum of the numbers is ${total}`)
+
+
+// Var 2
+// let input;
+// let total = 0;
+
+// do {
+//   input = prompt('Enter a number');
+//   console.log(input);
+
+//   let enteredData = Number(input);
+//   console.log(enteredData);
+
+//   if (Number.isNaN(enteredData)) {
+//     console.log('Total sum ', total);
+//     alert('Not a number, try again');
+//     continue;
+//   }
+
+//   total += enteredData;
+//   console.log('Total sum: ', total);
+// } while (input !== null);
+
+// alert(`The total sum of the numbers is ${total}`);
+
+
+
+
+
+// Var 3
+// / let input;
+// let total = 0;
+
+// for (let i = 0; true; i += 1) {
+//   input = prompt('Enter a number');
+//   console.log(input);
+
+//   if (input === null) {
+//     break;
+//   }
+
+//   input = Number(input);
+
+//   if (Number.isNaN(input)) {
+//     alert('Not a number, try again');
+//     continue;
+//   }
+
+//   total += input;
+//   console.log('Total sum: ', total);
 // }
 
+// alert(`The total sum of the numbers is ${total}`);
 
-
-// Напиши скрипт который просит посетителя ввести число в prompt до тех пор, пока посетитель на нажмет Cancel и каждый раз добавляет введенное значение к общей сумме.
-
-// При загрузке страницы пользователю предлагается в prompt ввести число. Ввод добавляется к значению переменной total.
-// Операция ввода числа продолжается до тех пор, пока пользователь не нажмет кнопку Cancel в prompt.
-// После того как пользователь прекратил ввод нажав кнопку Cancel, показать alert со строкой 'Общая сумма чисел равна [сумма]'.
