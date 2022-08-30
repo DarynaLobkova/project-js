@@ -1,9 +1,13 @@
 const formatString = function (string) {
-    const letters = string.split('');
+    const formattedString =
+    string.length <= 40 ? string : string.slice(0, 40) + '...';
 
-return letters
-  // твой код
+  return formattedString;
 };
+
+
+
+
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.

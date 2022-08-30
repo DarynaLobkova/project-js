@@ -5,9 +5,8 @@ let total = 0;
 
 for (let i = 0; true; i += 1) {
   input = prompt('Enter a number');
-  numbers.push (input)
-
-  console.log (numbers)
+  console.log(input)
+ 
 
   if (input === null) {
     break;
@@ -17,8 +16,10 @@ for (let i = 0; true; i += 1) {
 
   if (Number.isNaN(input)) {
     alert('Not a number, try again');
-    numbers.pop (input)
     continue;
+  } else {
+    numbers.push(input)
+    console.log(numbers)
   }
 
   total += input;
