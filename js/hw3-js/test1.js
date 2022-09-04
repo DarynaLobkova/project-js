@@ -60,52 +60,47 @@
                                     // TEST 3
 //   Напиши функцию findBestEmployee(employees), которая принимает объект сотрудников и 
 // возвращает имя самого продуктивного(который выполнил больше всех задач).
-// const findBestEmployee = function (employees) {
 
-const findBestEmployee = function (employees) {
-
-    const values = Object.values(employees)
-    const keys = Object.keys(employees)
-
-    for (const value of values) {
-        let score = values;
-        let bestScore = Math.max(...score); 
-      
-
-   console.log(bestScore)
-    }
+    
   
-//  
-};
 
-/*
- * Вызовы функции для проверки работоспособности твоей реализации.
- */
-console.log(
-  findBestEmployee({
-    ann: 29,
-    david: 35,
-    helen: 1,
-    lorence: 99,
-  }),
-); // lorence
+// const findBestEmployee = function(employees) {
+//   const values = Object.values(employees);
 
-console.log(
-  findBestEmployee({
-    poly: 12,
-    mango: 17,
-    ajax: 4,
-  }),
-); // mango
+//   const max = Math.max(...values);
+//   const indexMax = values.indexOf(max);
+//   const keyEmployee = Object.keys(employees);
 
-console.log(
-  findBestEmployee({
-    lux: 147,
-    david: 21,
-    kiwi: 19,
-    chelsy: 38,
-  }),
-); // lux
+//   return keyEmployee[indexMax];
+// };
+// /*
+//  * Вызовы функции для проверки работоспособности твоей реализации.
+//  */
+// console.log(
+//   findBestEmployee({
+//     ann: 29,
+//     david: 35,
+//     helen: 1,
+//     lorence: 99,
+//   }),
+// ); // lorence
+
+// console.log(
+//   findBestEmployee({
+//     poly: 12,
+//     mango: 17,
+//     ajax: 4,
+//   }),
+// ); // mango
+
+// console.log(
+//   findBestEmployee({
+//     lux: 147,
+//     david: 21,
+//     kiwi: 19,
+//     chelsy: 38,
+//   }),
+// ); // lux
 
 
                                 //   TEST 4
