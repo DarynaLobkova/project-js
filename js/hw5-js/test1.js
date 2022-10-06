@@ -150,57 +150,64 @@
 // Напиши класс Car с указанными свойствами и методами.
 
 class Car {
-  static getSpecs(car) {
-   
-
-  }
- 
-
-  constructor(speed = 0, maxSpeed = '', isOn = false, distanse = '', price = '') {
-    this.speed = speed;
-    this.maxSpeed = maxSpeed;
-    this.isOn = isOn;
-    this.distanse = distanse;
-    this.price = price;
-    }
- 
-  get _price () {
-    return this.price;
+ static getSpecs(car) {
+  console.log(car)
   }
 
-  set _price(value) {
-    this.price = value;
+
+  constructor(param) {
+    this.maxSpeed = param.maxSpeed;
+    this.speed = 0;
+    this.isOn = false;
+    this.distance = 0;
+    this._price = param.price;
+  }
+  
+ 
+  get price () {
+    return this._price;
+  }
+
+  set price(newPrice) {
+    this._price = newPrice;
   }
  
-  turnOn() {
-        this.isOn = true;
+  turnOn(isOn) {
+    this.isOn = true;
         
   }
 
-  turnOff() {
-        this.isOn = false;
-        this.speed = 0;
+  turnOff(isOn) {
+    this.isOn = false;
+    this.speed = 0;
+       
       
   }
 
   accelerate(value) {
-   let result = this.speed < this.maxSpeed?  this.speed += value : false ;
-return result
+     if (this.speed + value <= this.maxSpeed) {
+      this.speed += value;
+    } else {
+      this.speed = this.maxSpeed;
+    }
       
   }
 
  
   decelerate(value) {
-    let result = this.speed < 0?  this.speed -= value : false ;
- return result
+    if (this.speed - value > 0) {
+      this.speed -= value;
+    } else {
+      this.speed = 0;
+    }
+    
+   
   }
 
 
   drive(hours) {
-    if (this.isOn = true) {
-      const distanse = hours * this.speed;
-      return distanse;
-    }
+  this.distance += hours * this.speed;
+    
   }
 }
 
