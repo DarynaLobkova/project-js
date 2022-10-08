@@ -110,8 +110,59 @@ const users =  [
                                      // Задание 3
 // Получить массив имен пользователей по полу (поле gender).
 
-const getUsersWithGender = (users, gender) =>
-    users.filter(user => user.gender === gender);
-     
+// const getUsersWithGender = (users, gender) => 
+//    users.filter(user => user.gender === gender)  
 
-console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+// console.log(getUsersWithGender(users, 'male')); 
+
+                               // Задание 4
+// Получить массив только неактивных пользователей (поле isActive).
+
+// const getInactiveUsers = users => 
+// users.filter( user => user.isActive !== true);
+
+// console.log(getInactiveUsers(users)); 
+
+                              // Задание 5
+// Получить пользоваля (не массив) по email (поле email, он уникальный).
+
+// const getUserWithEmail = (users, email) => 
+// users.find(user => user.email === email);
+
+// console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); 
+// console.log(getUserWithEmail(users, 'elmahead@omatom.com')); 
+
+                              // Задание 6
+// Получить массив пользователей попадающих в возрастную 
+// категорию от min до max лет(поле age).
+
+// const getUsersWithAge = (users, min, max) => 
+//  users.filter(({ age}) => age >= min && age < max
+// );
+
+// console.log(getUsersWithAge(users, 20, 30)); 
+// console.log(getUsersWithAge(users, 30, 40));
+
+
+                                // Задание 7
+// Получить общую сумму баланса (поле balance) всех пользователей.
+
+// const calculateTotalBalance = users => 
+// users.reduce((total, user) => {
+//   return total + user.balance;
+// }, 0);;
+
+// console.log(calculateTotalBalance(users));
+
+                                  // Задание 8
+// Массив имен всех пользователей у которых есть друг с указанным именем.
+
+const getUsersWithFriend = (users, friendName) => {
+  
+}
+ 
+;
+
+
+console.log(getUsersWithFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
+console.log(getUsersWithFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
