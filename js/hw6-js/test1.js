@@ -101,33 +101,33 @@ const users =  [
                                  // Задание 2
 // Получить массив объектов пользователей по цвету глаз (поле eyeColor).
 
-// const getUsersWithEyeColor = (users, color) => 
-//     users.filter(user => user.eyeColor === color);
- 
+// const getUsersWithEyeColor = (users, color) =>
+//   users.filter(({ eyeColor }) => eyeColor === color);
    
 // console.log(getUsersWithEyeColor(users, 'blue'));
  
                                      // Задание 3
 // Получить массив имен пользователей по полу (поле gender).
 
-// const getUsersWithGender = (users, gender) => 
-//    users.filter(user => user.gender === gender)  
+// const getUsersWithGender = (users, sex) =>
+//   users.filter(({ gender }) => gender === sex)
+//     .map(user => user.name)
 
 // console.log(getUsersWithGender(users, 'male')); 
 
                                // Задание 4
 // Получить массив только неактивных пользователей (поле isActive).
 
-// const getInactiveUsers = users => 
-// users.filter( user => user.isActive !== true);
+// const getInactiveUsers = users =>
+//   users.filter(({ isActive }) => !isActive);
 
 // console.log(getInactiveUsers(users)); 
 
                               // Задание 5
 // Получить пользоваля (не массив) по email (поле email, он уникальный).
 
-// const getUserWithEmail = (users, email) => 
-// users.find(user => user.email === email);
+// const getUserWithEmail = (users, mail) => 
+// users.find(({email}) => email === mail);
 
 // console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); 
 // console.log(getUserWithEmail(users, 'elmahead@omatom.com')); 
@@ -148,8 +148,8 @@ const users =  [
 // Получить общую сумму баланса (поле balance) всех пользователей.
 
 // const calculateTotalBalance = users => 
-// users.reduce((total, user) => {
-//   return total + user.balance;
+// users.reduce((acc, {balance}) => {
+//   return acc + balance;
 // }, 0);;
 
 // console.log(calculateTotalBalance(users));
@@ -157,11 +157,10 @@ const users =  [
                                   // Задание 8
 // Массив имен всех пользователей у которых есть друг с указанным именем.
 
-const getUsersWithFriend = (users, friendName) => {
-  
-}
+const getUsersWithFriend = (array, name) =>
+  array.find(({ friends }) => friends === name)
  
-;
+ 
 
 
 console.log(getUsersWithFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
