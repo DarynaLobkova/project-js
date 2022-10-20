@@ -157,14 +157,9 @@ const users =  [
                                   // Задание 8
 // Массив имен всех пользователей у которых есть друг с указанным именем.
 
-// const allFriends = users.reduce((allFriends, user) => {
-// allFriends.push(...user.friends);
-// return allFriends;
-// }, []);
-// console.log(allFriends);
-
-// const getUsersWithFriend = (users, friendName) =>
-
+// const getUsersWithFriend = (users, friendName) => {
+//    return users.filter(({friends}) => friends.includes(friendName))
+// }
 
 // console.log(getUsersWithFriend(users, 'Briana Decker')); 
 // console.log(getUsersWithFriend(users, 'Goldie Gentry')); 
@@ -175,7 +170,10 @@ const users =  [
 // Массив имен(поле name) людей, отсортированных
 //  в зависимости от количества их друзей(поле friends)
 
-// const getNamesSortedByFriendsCount = 
+// const getNamesSortedByFriendsCount = users => {
+
+// }
+
  
 
 // console.log(getNamesSortedByFriendsCount(users));
@@ -187,12 +185,13 @@ const users =  [
 //   при этом не должно быть повторяющихся умений и они должны быть
 //    отсортированы в алфавитном порядке.
 
-const getSortedUniqueSkills = users => users.reduce(( skills, user) => {
-  skills.push(...user.skills)
-  skills.sort();
+// const getSortedUniqueSkills = users => users.reduce((skills, user) => {
+//   skills.push(...user.skills)
 
-  return skills;
-}, []);
+//   return skills.filter((skill, index, array) =>
+//     array.indexOf(skill) === index)
+//     .sort();
   
-
-console.log(getSortedUniqueSkills(users));
+// }, []);
+  
+// console.log(getSortedUniqueSkills(users));
