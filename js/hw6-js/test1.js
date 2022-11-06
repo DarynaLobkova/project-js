@@ -166,18 +166,18 @@ const users =  [
 
 
 
-                                   // Задание 9
+//                                    Задание 9
 // Массив имен(поле name) людей, отсортированных
 //  в зависимости от количества их друзей(поле friends)
 
-// const getNamesSortedByFriendsCount = users => {
+const getNamesSortedByFriendsCount = users => {
 
-// }
+}
 
  
 
-// console.log(getNamesSortedByFriendsCount(users));
-// [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
+console.log(getNamesSortedByFriendsCount(users));
+[ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
 
 
                                    // Задание 10
